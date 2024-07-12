@@ -45,7 +45,7 @@ gem "bootsnap", require: false
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'dartsass-sprockets'
-gem 'popper_js', '~> 2.11.8'
+
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
