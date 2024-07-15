@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <%= link_to  "Navbar", root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,7 +11,7 @@
             Profile
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Create</a></li>
+            <li><%= link_to  "Create", new_profile_path, class: "dropdown-item" %></li>
             <li><a class="dropdown-item" href="#">ReScan</a></li>
           </ul>
         </li>

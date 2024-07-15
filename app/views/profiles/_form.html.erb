@@ -1,0 +1,32 @@
+<%= form_with(model: profile) do |form| %>
+  <% if profile.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+        <% profile.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Name</span>
+      <%= form.text_field :name, placeholder: "Name", class: "form-control" %>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="mb-3">
+      <label for="basic-url" class="form-label">Your GitHub URL</label>
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon3">https://github.com/</span>
+      <%= form.text_field :url, class: "form-control" %>
+    </div>
+  <div>
+    <%= form.submit 'Create', class: "btn btn-outline-success" %>
+  </div>
+<% end %>
