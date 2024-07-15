@@ -1,0 +1,184 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/controllers/home_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/controllers/profiles_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/helpers/profiles_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/wesley/Documentos/Estudos/ruby/ruby_on_rails/webscrapper/app/models/profile.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1721084850
+  }
+}
