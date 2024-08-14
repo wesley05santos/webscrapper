@@ -8,5 +8,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-  get 'search', to: 'search#search_profiles'
+  get 'search_profiles', to: 'search#search_profiles'
 end

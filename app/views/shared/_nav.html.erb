@@ -17,10 +17,12 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <li class="d-flex" role="search">
+        <%= form_with url: search_profiles_path, method: :get do |form| %>
+          <%= form.text_field :query, placeholder: 'Name, URL,.....' %>
+          <%= form.submit "🔍" %>
+        <% end %>
+      </li>
     </div>
   </div>
 </nav>
