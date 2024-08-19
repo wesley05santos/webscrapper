@@ -43,7 +43,7 @@ RSpec.describe SearchController do
     it 'should empty array' do
       get :search_profiles, params: {query: 'wefsdfasfa'}
       expect(response).to render_template('search_profiles')
-      expect(assigns(:profiles).empty?).to be_truthy
+      expect(assigns(:profiles)).to be_empty
     end
   end
 end
