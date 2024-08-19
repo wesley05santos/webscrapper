@@ -4,7 +4,7 @@ RSpec.describe SearchController do
 
   before(:each) do
     Profile.create(name: 'wesley', url: 'https://github.com/wesley05')
-    Profile.create(name: 'EDSON', url: 'https://github.com/EDSON')
+    Profile.create(name: 'ED$ON', url: 'https://github.com/EDSON$')
     Profile.create(name: 'Fulano', url: 'https://github.com/fulano01')
     Profile.create(name: 'Ciclano', url: 'https://github.com/ciclano05')
   end
@@ -25,13 +25,25 @@ RSpec.describe SearchController do
     it 'fill in with letter "e" ' do
       get :search_profiles, params: {query: 'e'}
       expect(response).to render_template('search_profiles')
-      expect(assigns(:profiles).pluck(:name)).to include('wesley', 'EDSON')
+      expect(assigns(:profiles).pluck(:name)).to include('wesley', 'ED$ON')
     end
 
     it 'fill in with number "5" ' do
       get :search_profiles, params: {query: '5'}
       expect(response).to render_template('search_profiles')
       expect(assigns(:profiles).pluck(:name)).to include('wesley', 'Ciclano')
+    end
+
+    it 'fill in with special character "$" ' do
+      get :search_profiles, params: {query: '$'}
+      expect(response).to render_template('search_profiles')
+      expect(assigns(:profiles).pluck(:name)).to include('ED$ON')
+    end
+
+    it 'should empty array' do
+      get :search_profiles, params: {query: 'wefsdfasfa'}
+      expect(response).to render_template('search_profiles')
+      expect(assigns(:profiles).empty?).to be_truthy
     end
   end
 end
