@@ -1,5 +1,9 @@
 <div id="<%= dom_id profile %>">
   <p>
+    <img style="height:auto; border-radius: 50%" alt="View xitarps's full-sized avatar" src="<%= profile.image_url %>" width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+  </p>
+
+  <p>
     <strong>Name:</strong>
     <%= profile.name %>
   </p>
@@ -9,4 +13,33 @@
     <%= profile.url %>
   </p>
 
+  <p>
+    <strong>Repositories:</strong>
+    <%= profile.repositories %>
+  </p>
+
+  <p>
+    <strong>Stars:</strong>
+    <%= profile.stars %>
+  </p>
+
+  <p>
+    <strong>Followers:</strong>
+    <%= profile.followers %>
+  </p>
+
+  <p>
+    <strong>Followings:</strong>
+    <%= profile.followings %>
+  </p>
+
+  <p>
+    <strong>Company:</strong>
+    <%= profile.company %>
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    <%= profile.location %>
+  </p>
 </div>

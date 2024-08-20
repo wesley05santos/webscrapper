@@ -10,6 +10,9 @@ class Profile < ApplicationRecord
   private
 
   def normalize_url
+    return if self.url.include?('https://github.com/')
+
     self.url = "https://github.com/#{self.url}"
   end
 end
+
