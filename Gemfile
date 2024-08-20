@@ -49,7 +49,7 @@ gem 'dartsass-sprockets'
 
 gem 'simplecov', require: false, group: :test
 
-
+gem 'nokogiri'
 
 
 
