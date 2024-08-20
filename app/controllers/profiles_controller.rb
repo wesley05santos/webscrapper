@@ -27,6 +27,7 @@ class ProfilesController < ApplicationController
       if @profile.save
         format.html { redirect_to profile_url(@profile), notice: "Profile was successfully created." }
         # format.json { render :show, status: :created, location: @profile }
+        FetchProfileExtraDataService.call(@profile.id)
       else
         format.html { render :new, status: :unprocessable_entity }
         # format.json { render json: @profile.errors, status: :unprocessable_entity }
