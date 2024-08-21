@@ -29,6 +29,7 @@ class ProfilesController < ApplicationController
         # format.json { render :show, status: :created, location: @profile }
         FetchProfileExtraDataService.call(@profile.id)
       else
+        @profile.url = params[:profile][:url]
         format.html { render :new, status: :unprocessable_entity }
         # format.json { render json: @profile.errors, status: :unprocessable_entity }
       end
