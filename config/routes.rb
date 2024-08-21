@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
   get 'search_profiles', to: 'search#search_profiles'
+  put 'rescan', to: 'profiles#rescan'
 end

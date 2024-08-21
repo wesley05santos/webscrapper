@@ -12,6 +12,7 @@ class FetchProfileExtraDataService
   def call
     run
   end
+  
   private
 
   def run

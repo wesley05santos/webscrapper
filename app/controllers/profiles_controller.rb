@@ -59,6 +59,11 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def rescan
+    FetchProfileExtraDataService.call(params[:profile_id])
+    redirect_to profile_path(id: params[:profile_id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_profile
