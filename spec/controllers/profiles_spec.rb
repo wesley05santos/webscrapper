@@ -64,11 +64,17 @@ RSpec.describe ProfilesController do
 
   describe 'DELETE :destroy' do
     it 'destroy one profile' do
-      # binding.break
       delete :destroy, params: {id: Profile.first.id}
       expect(response).to redirect_to(profiles_path)
-      # expect(assigns(:profile)).to eq(Profile.first)
       expect(Profile.pluck(:name).flatten).not_to include('Wesley')
+    end
+  end
+
+  describe 'PUT :rescan' do
+    it 'rescan profile' do
+      Profile.first.update(stars: 39)
+      put :rescan, params: {profile_id: Profile.first.id}
+      expect(Profile.first.stars).not_to eq(39)
     end
   end
 end
