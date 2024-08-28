@@ -1,11 +1,20 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @profile %>
+<div class="row">
+  <div class="col-sm">
+    <%= link_to "Edit this profile", edit_profile_path(@profile), class: "btn btn-outline-success" %>
+    <%= link_to "Back to profiles", profiles_path, class: "btn btn-outline-primary" %>
+  </div>
+</div>
 
-<div>
-  <%= link_to "Edit this profile", edit_profile_path(@profile) %> |
-  <%= link_to "Back to profiles", profiles_path %>
-
-  <%= button_to "Destroy this profile", @profile, method: :delete %>
-  <%= button_to "ReScan", rescan_path(profile_id: @profile.id), method: :put %>
+<div class="row", style="margin-top: 2px">
+  <div class="col-sm">
+    <%= link_to "Destroy this profile", @profile, method: :delete, class: "btn btn-outline-danger" %>
+    <%= form_with url: rescan_path(profile_id: @profile.id) do |form| %>
+      <%= form.submit "ReScan", class: "btn btn-outline-secondary" %>
+      <%= form.hidden_field '_method', value: 'PUT' %>
+      <%= form.hidden_field :authenticity_token, value: form_authenticity_token %>
+    <% end %>
+  </div>
 </div>
