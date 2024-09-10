@@ -1,7 +1,11 @@
 require 'rails_helper'
 
 describe FetchProfileExtraDataService do
-  let!(:profile) { Profile.create(name: 'Wesley', url: 'wesley05santos') }
+  # before(:each){ allow_any_instance_of(FetchProfileExtraDataService).to receive(:batata).and_return(puts 'cenoura') }
+  # before(:each){ allow(URI).to receive(:open).and_return(File.read('spec/fixtures/matz_profile.html')) }
+  # before(:each){ allow(Faraday).to receive_message_chain(:get, :status).and_return(200) }
+
+  let!(:profile) { Profile.create(name: 'Matz', url: 'matz') }
 
   context '#initialize' do
     it 'receives the correct id' do
